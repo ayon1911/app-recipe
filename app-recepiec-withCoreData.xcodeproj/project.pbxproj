@@ -13,6 +13,10 @@
 		B62BE80E1D291ED600D6D641 /* app_recepiec_withCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B62BE80C1D291ED600D6D641 /* app_recepiec_withCoreData.xcdatamodeld */; };
 		B62BE8101D291ED600D6D641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62BE80F1D291ED600D6D641 /* Assets.xcassets */; };
 		B62BE8131D291ED600D6D641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62BE8111D291ED600D6D641 /* LaunchScreen.storyboard */; };
+		B62BE81F1D29519600D6D641 /* Recepies+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62BE81D1D29519600D6D641 /* Recepies+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		B62BE8201D29519600D6D641 /* Recepies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62BE81E1D29519600D6D641 /* Recepies.swift */; settings = {ASSET_TAGS = (); }; };
+		B62BE8221D2956A300D6D641 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62BE8211D2956A300D6D641 /* RecipeCell.swift */; settings = {ASSET_TAGS = (); }; };
+		B62BE8241D295EC800D6D641 /* CreatRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62BE8231D295EC800D6D641 /* CreatRecipeVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B62BE80F1D291ED600D6D641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B62BE8121D291ED600D6D641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B62BE8141D291ED600D6D641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B62BE81D1D29519600D6D641 /* Recepies+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recepies+CoreDataProperties.swift"; path = "../Recepies+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B62BE81E1D29519600D6D641 /* Recepies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recepies.swift; path = ../Recepies.swift; sourceTree = "<group>"; };
+		B62BE8211D2956A300D6D641 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		B62BE8231D295EC800D6D641 /* CreatRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatRecipeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		B62BE8041D291ED500D6D641 /* app-recepiec-withCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				B62BE81C1D29517700D6D641 /* Controller */,
+				B62BE81B1D29517000D6D641 /* View */,
+				B62BE81A1D29516A00D6D641 /* Model */,
 				B62BE8051D291ED500D6D641 /* AppDelegate.swift */,
-				B62BE8071D291ED500D6D641 /* ViewController.swift */,
 				B62BE8091D291ED600D6D641 /* Main.storyboard */,
 				B62BE80F1D291ED600D6D641 /* Assets.xcassets */,
 				B62BE8111D291ED600D6D641 /* LaunchScreen.storyboard */,
@@ -65,6 +75,32 @@
 				B62BE80C1D291ED600D6D641 /* app_recepiec_withCoreData.xcdatamodeld */,
 			);
 			path = "app-recepiec-withCoreData";
+			sourceTree = "<group>";
+		};
+		B62BE81A1D29516A00D6D641 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B62BE81D1D29519600D6D641 /* Recepies+CoreDataProperties.swift */,
+				B62BE81E1D29519600D6D641 /* Recepies.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B62BE81B1D29517000D6D641 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B62BE8211D2956A300D6D641 /* RecipeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B62BE81C1D29517700D6D641 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B62BE8071D291ED500D6D641 /* ViewController.swift */,
+				B62BE8231D295EC800D6D641 /* CreatRecipeVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62BE8081D291ED600D6D641 /* ViewController.swift in Sources */,
+				B62BE8241D295EC800D6D641 /* CreatRecipeVC.swift in Sources */,
+				B62BE81F1D29519600D6D641 /* Recepies+CoreDataProperties.swift in Sources */,
 				B62BE80E1D291ED600D6D641 /* app_recepiec_withCoreData.xcdatamodeld in Sources */,
+				B62BE8221D2956A300D6D641 /* RecipeCell.swift in Sources */,
+				B62BE8201D29519600D6D641 /* Recepies.swift in Sources */,
 				B62BE8061D291ED500D6D641 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
